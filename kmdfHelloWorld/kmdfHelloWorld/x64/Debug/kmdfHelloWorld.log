@@ -1,0 +1,22 @@
+﻿  Building 'kmdfHelloWorld' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Debug\kmdfHelloWorld.inf
+  Stamping [Version] section with DriverVer=06/09/2024,15.34.39.698
+  kmdfHelloWorld.vcxproj -> C:\Programacion\c_c++\drivers\kmdfHelloWorld\x64\Debug\kmdfHelloWorld.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Programacion\c_c++\drivers\kmdfHelloWorld\x64\Debug\kmdfHelloWorld.sys
+  
+  Driver is 'Universal'.
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Programacion\c_c++\drivers\kmdfHelloWorld\x64\Debug\kmdfHelloWorld\kmdfhelloworld.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Programacion\c_c++\drivers\kmdfHelloWorld\x64\Debug\kmdfHelloWorld\kmdfhelloworld.cat
+  

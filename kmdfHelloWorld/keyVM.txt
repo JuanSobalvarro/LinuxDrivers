@@ -1,0 +1,3 @@
+1fgiv3c4fa7mx.3f9sfmi4omqle.3euxxm98890r2.1wna112jw0rww
+
+windbg -k net:port=50000,key=1fgiv3c4fa7mx.3f9sfmi4omqle.3euxxm98890r2.1wna112jw0rww

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Programacion\\c_c\u002B\u002B\\drivers\\kmdfHelloWorld\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45EF7BA5-2760-448B-81AC-86B2D67FAEE0}|kmdfHelloWorld\\kmdfHelloWorld.vcxproj|C:\\Programacion\\c_c\u002B\u002B\\drivers\\kmdfHelloWorld\\kmdfHelloWorld\\Driver.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{45EF7BA5-2760-448B-81AC-86B2D67FAEE0}|kmdfHelloWorld\\kmdfHelloWorld.vcxproj|solutionrelative:kmdfHelloWorld\\Driver.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Driver.c",
+              "DocumentMoniker": "C:\\Programacion\\c_c\u002B\u002B\\drivers\\kmdfHelloWorld\\kmdfHelloWorld\\Driver.c",
+              "RelativeDocumentMoniker": "kmdfHelloWorld\\Driver.c",
+              "ToolTip": "C:\\Programacion\\c_c\u002B\u002B\\drivers\\kmdfHelloWorld\\kmdfHelloWorld\\Driver.c",
+              "RelativeToolTip": "kmdfHelloWorld\\Driver.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-06-09T21:13:15.876Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

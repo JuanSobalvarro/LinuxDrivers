@@ -1,0 +1,62 @@
+;
+; kmdfHelloWorld.inf
+;
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = System ; TODO: specify appropriate Class
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider    = %ManufacturerName%
+CatalogFile = kmdfHelloWorld.cat
+DriverVer = 06/09/2024,15.34.39.698
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+kmdfHelloWorld.sys = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName% = Standard,NTamd64.10.0...16299 ; %13% support introduced in build 16299
+
+[Standard.NTamd64.10.0...16299]
+%kmdfHelloWorld.DeviceDesc% = kmdfHelloWorld_Device, Root\kmdfHelloWorld ; TODO: edit hw-id
+
+[kmdfHelloWorld_Device.NT]
+CopyFiles = File_Copy
+
+[File_Copy]
+kmdfHelloWorld.sys
+
+;-------------- Service installation
+[kmdfHelloWorld_Device.NT.Services]
+AddService = kmdfHelloWorld,%SPSVCINST_ASSOCSERVICE%, kmdfHelloWorld_Service_Inst
+
+; -------------- kmdfHelloWorld driver install sections
+[kmdfHelloWorld_Service_Inst]
+DisplayName    = %kmdfHelloWorld.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\kmdfHelloWorld.sys
+
+[kmdfHelloWorld_Device.NT.Wdf]
+KmdfService = kmdfHelloWorld, kmdfHelloWorld_wdfsect
+
+[kmdfHelloWorld_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE = 0x00000002
+ManufacturerName = "<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "kmdfHelloWorld Installation Disk"
+kmdfHelloWorld.DeviceDesc = "kmdfHelloWorld Device"
+kmdfHelloWorld.SVCDESC = "kmdfHelloWorld Service"
